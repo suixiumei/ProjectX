@@ -1,0 +1,190 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>内部使用\源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ProjectX.cpp">
+      <Filter>内部使用\源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\TrayIcon.cpp">
+      <Filter>外部引用\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\TrayAPP.cpp">
+      <Filter>外部引用\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Transcode\Code.cpp">
+      <Filter>外部引用\Transcode</Filter>
+    </ClCompile>
+    <ClCompile Include="Transcode\md5.cpp">
+      <Filter>外部引用\Transcode</Filter>
+    </ClCompile>
+    <ClCompile Include="Transcode\Win32Transcode.cpp">
+      <Filter>外部引用\Transcode</Filter>
+    </ClCompile>
+    <ClCompile Include="XML\Markup.cpp">
+      <Filter>外部引用\XML</Filter>
+    </ClCompile>
+    <ClCompile Include="Custom\LuaCustomManager.cpp">
+      <Filter>外部引用\Moudel\Interface\源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Login\LuaLoginManager.cpp">
+      <Filter>外部引用\Moudel\Interface\源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SYS\LuaSystemManager.cpp">
+      <Filter>外部引用\Moudel\Interface\源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Custom\CustomManager.cpp">
+      <Filter>外部引用\Moudel\Business\源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Login\LoginManager.cpp">
+      <Filter>外部引用\Moudel\Business\源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SYS\SystemManager.cpp">
+      <Filter>外部引用\Moudel\Business\源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="COM\WebBrowserBase.cpp">
+      <Filter>外部引用\Other</Filter>
+    </ClCompile>
+    <ClCompile Include="COM\CommonFunc.cpp">
+      <Filter>内部使用\源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Test\WebPage.cpp">
+      <Filter>外部引用\Test</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>内部使用\头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>内部使用\头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ChunkStruct.h">
+      <Filter>外部引用\Other</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="ProjectX.h">
+      <Filter>内部使用\头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\TrayIcon.h">
+      <Filter>外部引用\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\TrayAPP.h">
+      <Filter>外部引用\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Transcode\Code.h">
+      <Filter>外部引用\Transcode</Filter>
+    </ClInclude>
+    <ClInclude Include="Transcode\md5.h">
+      <Filter>外部引用\Transcode</Filter>
+    </ClInclude>
+    <ClInclude Include="Transcode\Win32Transcode.h">
+      <Filter>外部引用\Transcode</Filter>
+    </ClInclude>
+    <ClInclude Include="XML\Markup.h">
+      <Filter>外部引用\XML</Filter>
+    </ClInclude>
+    <ClInclude Include="res.h">
+      <Filter>内部使用\头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="XLDownload\XLDownload.h">
+      <Filter>外部引用\Other</Filter>
+    </ClInclude>
+    <ClInclude Include="Custom\LuaCustomManager.h">
+      <Filter>外部引用\Moudel\Interface\头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Login\LuaLoginManager.h">
+      <Filter>外部引用\Moudel\Interface\头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SYS\LuaSystemManager.h">
+      <Filter>外部引用\Moudel\Interface\头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Custom\CustomManager.h">
+      <Filter>外部引用\Moudel\Business\头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Login\LoginManager.h">
+      <Filter>外部引用\Moudel\Business\头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SYS\SystemManager.h">
+      <Filter>外部引用\Moudel\Business\头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="COM\WebBrowserBase.h">
+      <Filter>外部引用\Other</Filter>
+    </ClInclude>
+    <ClInclude Include="COM\CommonFunc.h">
+      <Filter>内部使用\头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Test\WebPage.h">
+      <Filter>外部引用\Test</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="ProjectX.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+    <None Include="res\ProjectX.ico" />
+    <None Include="res\ProjectX.rc2" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="外部引用">
+      <UniqueIdentifier>{7ad55a94-58df-4be3-a00e-102da6e3f8cd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="外部引用\XML">
+      <UniqueIdentifier>{bcaf82fc-d4aa-49a3-a66d-9c289b6cdd55}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="外部引用\Other">
+      <UniqueIdentifier>{0c83ea05-05f5-4710-9c61-5706660874d9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="外部引用\Moudel">
+      <UniqueIdentifier>{14f878b2-80e2-4b46-82a7-875e787a13ff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="外部引用\UI">
+      <UniqueIdentifier>{9966cd6f-d219-4f51-ada0-7f780734b3cd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="内部使用">
+      <UniqueIdentifier>{d86be0d2-2424-4882-a48f-ecca55a14015}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="内部使用\源文件">
+      <UniqueIdentifier>{8893ba8a-90e8-46a1-ba94-1f0ffabde833}</UniqueIdentifier>
+      <Extensions>cpp</Extensions>
+    </Filter>
+    <Filter Include="内部使用\头文件">
+      <UniqueIdentifier>{08419f73-5c98-4e21-a9dc-e173383c6480}</UniqueIdentifier>
+      <Extensions>h</Extensions>
+    </Filter>
+    <Filter Include="外部引用\Transcode">
+      <UniqueIdentifier>{d3067207-b6c0-4e79-a052-d2677a218bdb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="外部引用\Moudel\Interface">
+      <UniqueIdentifier>{a6d0ceba-ae0f-4218-90f4-f884f90ba996}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="外部引用\Moudel\Business">
+      <UniqueIdentifier>{bdc835f1-25bd-4c6a-b2a1-20a797ce2807}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="外部引用\Moudel\Business\源文件">
+      <UniqueIdentifier>{00c02d59-11e7-4ea6-b606-6c2641f949b9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="外部引用\Moudel\Business\头文件">
+      <UniqueIdentifier>{ec118a3f-67c7-4979-9caa-5bab7330361f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="外部引用\Moudel\Interface\头文件">
+      <UniqueIdentifier>{32c3d6e9-739a-4732-a52a-f0b97d1922be}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="外部引用\Moudel\Interface\源文件">
+      <UniqueIdentifier>{8ae37f83-a1d3-46e0-9acf-46d66ed92f0c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="外部引用\Test">
+      <UniqueIdentifier>{d5f56c36-680b-48f9-8c87-2b05e546b040}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="COM\Extract7z.lib">
+      <Filter>外部引用\Other</Filter>
+    </Library>
+    <Library Include="XLDownload\XLDownload.lib">
+      <Filter>外部引用\Other</Filter>
+    </Library>
+  </ItemGroup>
+</Project>
