@@ -254,7 +254,7 @@ public:
 	static HRESULT InvokeMethod(IDispatch *pObj, LPOLESTR pName, VARIANT *pVarResult, VARIANT *p, int cArgs);
 	static HRESULT GetProperty(IDispatch *pObj, LPOLESTR pName, VARIANT *pValue);
 	static HRESULT SetProperty(IDispatch *pObj, LPOLESTR pName, VARIANT *pValue);
-	static CString GetButtonCallC(CString buttonID, JsFunction_Callback *m_pCallback);
+	static void GetButtonCallC(CString buttonID, JsFunction_Callback *m_pCallback, BOOL bl = FALSE);
 public:
 	//IDocHostUIHandler
 	virtual HRESULT STDMETHODCALLTYPE GetExternal(IDispatch **ppDispatch)

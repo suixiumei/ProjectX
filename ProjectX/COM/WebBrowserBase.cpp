@@ -63,7 +63,7 @@ HRESULT WebBrowserBase::SetProperty(IDispatch *pObj, LPOLESTR pName, VARIANT *pV
 	return pObj->Invoke(dispid, IID_NULL, LOCALE_SYSTEM_DEFAULT, DISPATCH_PROPERTYPUT, &ps, NULL, NULL, NULL);
 }
 
-CString WebBrowserBase::GetButtonCallC(CString buttonID, JsFunction_Callback *m_pCallback)
+void WebBrowserBase::GetButtonCallC(CString buttonID, JsFunction_Callback *m_pCallback, BOOL bl)
 {
 	//获取页面DOC元素
 	CVariant document;
@@ -76,14 +76,19 @@ CString WebBrowserBase::GetButtonCallC(CString buttonID, JsFunction_Callback *m_
 	CVariant button;
 	InvokeMethod(document.pdispVal, L"getElementById", &button, params, 1);
 
-	CVariant h_value;
-	GetProperty(button.pdispVal, L"h", &h_value);
-	//return ((CString)h_value);
-	
+	//
+	CString strResult;
+	if (bl)
+	{
+		CVariant h_value;
+		GetProperty(button.pdispVal, L"h", &h_value);
+		((CComVariant)h_value).ChangeType(VT_BSTR);
+		strResult = ((CComVariant)h_value).bstrVal;
+		OutputDebugStringX(L"H:" + strResult);
+	}
+	LPVOID hVa = strResult.AllocSysString();
 	//处理网页元素的onclick事件
 	params[0].vt = VT_DISPATCH;
-	params[0].pdispVal = new JsFunction(m_pCallback, NULL);
+	params[0].pdispVal = new JsFunction(m_pCallback, hVa);
 	SetProperty(button.pdispVal, L"onclick", params);
-
-	return NULL;
 }

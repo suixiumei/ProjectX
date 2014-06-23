@@ -98,14 +98,27 @@ static void _stdcall stdcall_test(LPVOID pParam)
 	//com.com_method_ChunkBolt(L"resultMainHelper.lua", "resultJBLSclick", ,);
 }
 
+//马上充值
+static void _stdcall stdcall_chargeNow(LPVOID pParam)
+{
+	SystemManager::GetInstance()->OpenUrl(L"http://www.baidu.com");
+}
+
+//继续游戏
+static void _stdcall stdcall_pauseGame(LPVOID pParam)
+{
+	OutputDebugStringX((CString)(LPCTSTR)pParam);
+	SystemManager::GetInstance()->OpenUrl((CString)(LPCTSTR)pParam);
+}
+
 //注册回调函数
 void CustomManager::RegeditCallFunc()
 {
-	//注释
 	gc_web->GetButtonCallC(L"unlogin_button", stdcall_unlogin);
 	gc_web->GetButtonCallC(L"mrqd_button", stdcall_dailyAttendance);
 	gc_web->GetButtonCallC(L"ckfl_button", stdcall_goldExpenses);
-	jxyx_button_h = gc_web->GetButtonCallC(L"jxyx_button", stdcall_test);
+	gc_web->GetButtonCallC(L"macz_button", stdcall_chargeNow);
+	gc_web->GetButtonCallC(L"jxyx_button", stdcall_pauseGame, TRUE);
 }
 
 /*************************************************
