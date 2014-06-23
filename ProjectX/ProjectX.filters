@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="外部引用">
+      <UniqueIdentifier>{59dd729d-c4f2-43af-9400-b31e9c1ab479}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="外部引用\第三方组件">
+      <UniqueIdentifier>{21b6195b-dec9-49c8-a413-c0345f5517f9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="外部引用\Ping">
+      <UniqueIdentifier>{69dfb022-a27f-4a07-86c8-deaa2800d92e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="外部引用\编码">
+      <UniqueIdentifier>{bd26e73f-06b6-426e-87f8-881c6b4cfdac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="外部引用\XML">
+      <UniqueIdentifier>{a388c40c-074f-479a-96ea-74400fff52c3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="外部引用\界面组件">
+      <UniqueIdentifier>{37d972bf-387d-43b3-8aa5-6162b0d978e0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="外部引用\其他">
+      <UniqueIdentifier>{b178d5c9-8571-46af-aa24-7457a16b9d76}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="外部引用\Steam">
+      <UniqueIdentifier>{5d33ca5a-0f65-437a-953a-3bf3c094cd12}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+    <None Include="res\ProjectX.rc2">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\ProjectX.ico">
+      <Filter>资源文件</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ProjectX.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MyClass.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="LuaMyClass.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CommonFunc.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="TestDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="icmp.h">
+      <Filter>外部引用\Ping</Filter>
+    </ClInclude>
+    <ClInclude Include="Code.h">
+      <Filter>外部引用\编码</Filter>
+    </ClInclude>
+    <ClInclude Include="md5.h">
+      <Filter>外部引用\编码</Filter>
+    </ClInclude>
+    <ClInclude Include="Markup.h">
+      <Filter>外部引用\XML</Filter>
+    </ClInclude>
+    <ClInclude Include="TrayIcon.h">
+      <Filter>外部引用\界面组件</Filter>
+    </ClInclude>
+    <ClInclude Include="BindCallback.h">
+      <Filter>外部引用\其他</Filter>
+    </ClInclude>
+    <ClInclude Include="Steam\Steam.h">
+      <Filter>外部引用\Steam</Filter>
+    </ClInclude>
+    <ClInclude Include="SteamInfo.h">
+      <Filter>外部引用\第三方组件</Filter>
+    </ClInclude>
+    <ClInclude Include="D2ToolDef.h">
+      <Filter>外部引用\第三方组件</Filter>
+    </ClInclude>
+    <ClInclude Include="XLDownload\XLDownload.h">
+      <Filter>外部引用\第三方组件</Filter>
+    </ClInclude>
+    <ClInclude Include="Transcode\Win32Transcode.h">
+      <Filter>外部引用\编码</Filter>
+    </ClInclude>
+    <ClInclude Include="ChunkStruct.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ProjectX.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MyClass.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="LuaMyClass.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CommonFunc.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="TestDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="icmp.cpp">
+      <Filter>外部引用\Ping</Filter>
+    </ClCompile>
+    <ClCompile Include="Code.cpp">
+      <Filter>外部引用\编码</Filter>
+    </ClCompile>
+    <ClCompile Include="md5.cpp">
+      <Filter>外部引用\编码</Filter>
+    </ClCompile>
+    <ClCompile Include="Markup.cpp">
+      <Filter>外部引用\XML</Filter>
+    </ClCompile>
+    <ClCompile Include="TrayIcon.cpp">
+      <Filter>外部引用\界面组件</Filter>
+    </ClCompile>
+    <ClCompile Include="BindCallback.cpp">
+      <Filter>外部引用\其他</Filter>
+    </ClCompile>
+    <ClCompile Include="Steam\Steam.cpp">
+      <Filter>外部引用\Steam</Filter>
+    </ClCompile>
+    <ClCompile Include="SteamInfo.cpp">
+      <Filter>外部引用\第三方组件</Filter>
+    </ClCompile>
+    <ClCompile Include="Transcode\Win32Transcode.cpp">
+      <Filter>外部引用\编码</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="ProjectX.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="XLDownload\XLDownload.lib">
+      <Filter>外部引用\第三方组件</Filter>
+    </Library>
+  </ItemGroup>
+</Project>
