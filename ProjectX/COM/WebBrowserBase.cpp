@@ -82,7 +82,7 @@ CString WebBrowserBase::GetButtonCallC(CString buttonID, JsFunction_Callback *m_
 	
 	//处理网页元素的onclick事件
 	params[0].vt = VT_DISPATCH;
-	params[0].pdispVal = new JsFunction(m_pCallback, (LPVOID)(LPCTSTR)((CString)h_value));
+	params[0].pdispVal = new JsFunction(m_pCallback, NULL);
 	SetProperty(button.pdispVal, L"onclick", params);
 
 	return NULL;
