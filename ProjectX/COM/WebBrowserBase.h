@@ -152,6 +152,7 @@ public:
 		_refNum = 1;
 		m_pCallback = pCallback;
 		m_pParam = pParam;
+		OutputDebugString(L"X:" + (CString)(LPCTSTR)m_pParam);
 	}
 	~JsFunction(void)
 	{
@@ -253,7 +254,7 @@ public:
 	static HRESULT InvokeMethod(IDispatch *pObj, LPOLESTR pName, VARIANT *pVarResult, VARIANT *p, int cArgs);
 	static HRESULT GetProperty(IDispatch *pObj, LPOLESTR pName, VARIANT *pValue);
 	static HRESULT SetProperty(IDispatch *pObj, LPOLESTR pName, VARIANT *pValue);
-	static CString GetButtonCallC(CString buttonID, JsFunction_Callback *m_pCallback, BOOL bl = FALSE);
+	static CString GetButtonCallC(CString buttonID, JsFunction_Callback *m_pCallback);
 public:
 	//IDocHostUIHandler
 	virtual HRESULT STDMETHODCALLTYPE GetExternal(IDispatch **ppDispatch)

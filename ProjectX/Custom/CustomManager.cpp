@@ -90,11 +90,11 @@ static void _stdcall stdcall_goldExpenses(LPVOID pParam)
 	com.com_method_ChunkBolt(L"resultMainHelper.lua", "resultJBLSclick", 0);
 }
 
-CString test_button_h;
+CString jxyx_button_h;
 //¼¤»îÓÎÏ·
 static void _stdcall stdcall_test(LPVOID pParam)
 {
-	OutputDebugStringX(test_button_h);
+	OutputDebugStringX((CString)(LPCTSTR)pParam);
 	//com.com_method_ChunkBolt(L"resultMainHelper.lua", "resultJBLSclick", ,);
 }
 
@@ -104,7 +104,7 @@ void CustomManager::RegeditCallFunc()
 	gc_web->GetButtonCallC(L"unlogin_button", stdcall_unlogin);
 	gc_web->GetButtonCallC(L"mrqd_button", stdcall_dailyAttendance);
 	gc_web->GetButtonCallC(L"ckfl_button", stdcall_goldExpenses);
-	test_button_h = gc_web->GetButtonCallC(L"test_button", stdcall_test,FALSE);
+	jxyx_button_h = gc_web->GetButtonCallC(L"jxyx_button", stdcall_test);
 }
 
 /*************************************************
