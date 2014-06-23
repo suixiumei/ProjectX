@@ -76,19 +76,22 @@ void WebBrowserBase::GetButtonCallC(CString buttonID, JsFunction_Callback *m_pCa
 	CVariant button;
 	InvokeMethod(document.pdispVal, L"getElementById", &button, params, 1);
 
-	//
+	//存放h属性获取结果
 	CString strResult;
 	if (bl)
 	{
+		//获取h属性
 		CVariant h_value;
 		GetProperty(button.pdispVal, L"h", &h_value);
 		((CComVariant)h_value).ChangeType(VT_BSTR);
 		strResult = ((CComVariant)h_value).bstrVal;
-		OutputDebugStringX(L"H:" + strResult);
 	}
+
 	LPVOID hVa = strResult.AllocSysString();
+
 	//处理网页元素的onclick事件
 	params[0].vt = VT_DISPATCH;
+	//参数1：回调函数指针；参数2：回调函数参数
 	params[0].pdispVal = new JsFunction(m_pCallback, hVa);
 	SetProperty(button.pdispVal, L"onclick", params);
 }
