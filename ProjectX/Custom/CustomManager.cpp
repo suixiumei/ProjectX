@@ -101,6 +101,7 @@ static void _stdcall stdcall_test(LPVOID pParam)
 //×¢²á»Øµ÷º¯Êý
 void CustomManager::RegeditCallFunc()
 {
+	//×¢ÊÍ
 	gc_web->GetButtonCallC(L"unlogin_button", stdcall_unlogin);
 	gc_web->GetButtonCallC(L"mrqd_button", stdcall_dailyAttendance);
 	gc_web->GetButtonCallC(L"ckfl_button", stdcall_goldExpenses);
